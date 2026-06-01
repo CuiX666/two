@@ -20,7 +20,7 @@ _CONFIG_FOR_DOC = "LlamaConfig"
 #     "The bare LLaMA Model outputting raw hidden-states without any specific head on top.",
 #     LLAMA_START_DOCSTRING,
 # )
-class LETTER(LlamaForCausalLM):
+class CanKao(LlamaForCausalLM):
     _tied_weights_keys = ["lm_head.weight"]
 
     def __init__(self, config):
