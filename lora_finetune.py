@@ -5,7 +5,7 @@ from typing import List
 # import wandb
 import torch
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
-from modeling_letter import LETTER
+from modeling import CanKao
 from fastchat.train.llama2_flash_attn_monkey_patch import (
     replace_llama_attn_with_flash_attn,
 )
